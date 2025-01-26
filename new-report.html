@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Report - Shift Report System</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <h1>Shift Report System</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="new-report.html" class="active">New Report</a></li>
+                <li><a href="view-reports.html">View Reports</a></li>
+                <li><a href="analytics.html">Analytics</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="form-container">
+                <h2>Create New Shift Report</h2>
+                <form id="reportForm">
+                    <div class="form-group">
+                        <label for="shiftDate">Shift Date</label>
+                        <input type="date" id="shiftDate" name="shiftDate" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="shiftType">Shift Type</label>
+                        <select id="shiftType" name="shiftType" required>
+                            <option value="">Select Shift Type</option>
+                            <option value="morning">Morning</option>
+                            <option value="afternoon">Afternoon</option>
+                            <option value="night">Night</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="employeeName">Employee Name</label>
+                        <input type="text" id="employeeName" name="employeeName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="department">Department</label>
+                        <select id="department" name="department" required>
+                            <option value="">Select Department</option>
+                            <option value="operations">Operations</option>
+                            <option value="maintenance">Maintenance</option>
+                            <option value="security">Security</option>
+                            <option value="housekeeping">Housekeeping</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="activities">Activities Completed</label>
+                        <textarea id="activities" name="activities" rows="4" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="issues">Issues/Incidents</label>
+                        <textarea id="issues" name="issues" rows="4"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="handover">Handover Notes</label>
+                        <textarea id="handover" name="handover" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Submit Report</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Shift Report System. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
